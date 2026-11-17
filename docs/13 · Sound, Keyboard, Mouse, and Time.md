@@ -3,7 +3,7 @@
 
 > **Objective:** Play sounds with adjustable volumes (music / effects), find out which keys are pressed, and read the time and date.
 
-⬅️ [Terminal](12-terminal.md) · [Table of Contents](../README.md) · ➡️ [TOOLS Tools](14-tools.md)
+⬅️ [Terminal](<12 · The Built-in Terminal.md>) · [Table of Contents](../README.md) · ➡️ [TOOLS Tools](<14 · The TOOLS Blocks.md>)
 
 ---
 
@@ -95,7 +95,7 @@ The `ᗢ CORE keys` list (75 entries): letters `a–z`, numbers `0–9`, symbols
 
 ## 3. Mouse
 
-Position, clicks, and hovering: see [06 · Cursor](06-curseur.md) (`〉CURSOR x`, `〉CURSOR y`, `〉CURSOR clicked ?`, `〉CURSOR hovering ?`).
+Position, clicks, and hovering: see [06 · Cursor](<06 · Cursor.md>) (`〉CURSOR x`, `〉CURSOR y`, `〉CURSOR clicked ?`, `〉CURSOR hovering ?`).
 
 ## 4. Time
 
@@ -109,5 +109,5 @@ To read `ᗢ CLOCK` from another sprite: `(ᗢ CLOCK) of (ᗢ Core)`.
 
 ---
 
-⬅️ [Terminal](12-terminal.md) · [Table of Contents](../README.md) · ➡️ [TOOLS Tools](14-tools.md)
+⬅️ [Terminal](<12 · The Built-in Terminal.md>) · [Table of Contents](../README.md) · ➡️ [TOOLS Tools](<14 · The TOOLS Blocks.md>)
 

@@ -3,7 +3,7 @@
 
 > **Goal:** animate your objects smoothly (glide, bounce, grow, rotate) and apply visual effects, with the `〉MOVE`, `〉SIZE`, `〉ROTATE` and `〉FX` blocks.
 
-⬅️ [Frame](03-frame.md) · [Index](../README.md) · ➡️ [Camera](05-camera.md)
+⬅️ [Frame](<03 · Frame.md>) · [Index](../README.md) · ➡️ [Camera](<05 · Camera.md>)
 
 ---
 
@@ -111,7 +111,7 @@ Three "`+`" blocks add an **offset** computed from the mouse. Place them **befor
 ```
 
 > [!WARNING]
-> `〉SIZE+ mouse speed` and `〉ROTATE+ mouse speed` read the variable **`〉CURSOR speed x`**. In the provided file, **no script updates this variable**: it stays at `0`, so these two effects do nothing until you feed it. Simple fix in [06 · Cursor](06-cursor.md#5-feeding-the-mouse-speed). `〉MOVE+ parallax`, on the other hand, works right away (it uses `〉CURSOR x` and `〉CURSOR y`, which are properly updated).
+> `〉SIZE+ mouse speed` and `〉ROTATE+ mouse speed` read the variable **`〉CURSOR speed x`**. In the provided file, **no script updates this variable**: it stays at `0`, so these two effects do nothing until you feed it. Simple fix in [06 · Cursor](<06 · Cursor.md#5-feeding-the-mouse-speed>). `〉MOVE+ parallax`, on the other hand, works right away (it uses `〉CURSOR x` and `〉CURSOR y`, which are properly updated).
 
 > [!NOTE]
 > Each family internally keeps its own "speed" (one variable per axis). **Don't use `smooth` and `bounce` at the same time on the same quantity** in one object: they would fight each other.
@@ -157,4 +157,4 @@ flowchart LR
 
 ---
 
-⬅️ [Frame](03-frame.md) · [Index](../README.md) · ➡️ [Camera](05-camera.md)
+⬅️ [Frame](<03 · Frame.md>) · [Index](../README.md) · ➡️ [Camera](<05 · Camera.md>)

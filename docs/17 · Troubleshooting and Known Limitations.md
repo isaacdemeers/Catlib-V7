@@ -2,7 +2,7 @@
 
 > **Objective:** Resolve common issues and understand which parts of the code require attention.
 
-⬅️ [Quick Reference](16-reference-rapide.md) · [Table of Contents](../README.md) · ➡️ [Glossary and Versions](18-glossaire-versions.md)
+⬅️ [Quick Reference](<16 · Quick Reference.md>) · [Table of Contents](../README.md)
 
 ---
 
@@ -15,7 +15,7 @@
 - In stamp mode, `〉SELF stamp` must be called **on every frame**.
 
 ### My object always returns to the center
-You kept the **example script** from `Frame` (`when I start as a clone` + `forever` with `〉MOVE bounce` toward `0 0`). Delete it ([03 §7](03-frame.md#7-le-script-dexemple-dans-frame-à-supprimer-)).
+You kept the **example script** from `Frame` (`when I start as a clone` + `forever` with `〉MOVE bounce` toward `0 0`). Delete it ([03 §7](<03 · Frame.md#7-the-example-script-in-frame-delete-it>)).
 
 ### My object does not move / moves suddenly
 - The `〉MOVE` / `〉SIZE` / `〉ROTATE` blocks must be called **on every frame**, inside `〉SELF on tick`.
@@ -23,7 +23,7 @@ You kept the **example script** from `Frame` (`when I start as a clone` + `forev
 - `damp = 1` is instant: increase it.
 
 ### My text does not stay displayed
-Core clears the pen on every frame: call `〉WRITE` **on every frame** in a `when I receive ᗢ CATLIB - tick` script ([08](08-texte.md)).
+Core clears the pen on every frame: call `〉WRITE` **on every frame** in a `when I receive ᗢ CATLIB - tick` script ([08](<08 · Text.md>)).
 
 ### My `〉CMD` command does nothing
 - The **name** must match the module name exactly (`〉MODULE set name`). A typo means nothing happens, with no message.
@@ -37,7 +37,7 @@ Core clears the pen on every frame: call `〉WRITE` **on every frame** in a `whe
 - Is the creation script inside `ᗢ UI`?
 
 ### I see multiple cursors
-The cursor is cloned every time you enter `SCENE MENU` ([06 §4](06-curseur.md#4-quand-apparaît-le-curseur-)).
+The cursor is cloned every time you enter `SCENE MENU` ([06 §4](<06 · Cursor.md#4-when-does-the-cursor-appear>)).
 
 ### The terminal does not open
 - Try the **`&`** key (the `1` key on an AZERTY keyboard).
@@ -48,13 +48,13 @@ The cursor is cloned every time you enter `SCENE MENU` ([06 §4](06-curseur.md#4
 - Use **TurboWarp**.
 - Prefer **stamp mode** (`〉SELF stamp`, `STAMP? [YES]`) over large numbers of visible clones.
 - Avoid creating many clones without deleting them (`〉SELF kill`).
-- Avoid extremely large layer numbers ([03 §5](03-frame.md#5-les-calques-ordre-daffichage)).
+- Avoid extremely large layer numbers ([03 §5](<03 · Frame.md#5-layers-display-order>)).
 
 ### My pen drawing disappears
-This is normal: Core runs `clear all` on every frame ([02](02-fonctionnement.md)).
+This is normal: Core runs `clear all` on every frame ([02](<02 · How it works.md>)).
 
 ### Cloud does not work
-It only works on the **official Scratch website**, when logged in, and the value must remain short and numeric ([11 §5](11-donnees-sauvegardes.md#5-le-cloud)).
+It only works on the **official Scratch website**, when logged in, and the value must remain short and numeric ([11 §5](<11 · Data and Save Files.md#5-the-cloud>)).
 
 ---
 
@@ -79,21 +79,21 @@ In `Core - GEN KEY`, if the calculated key has **more than 11** digits, it is tr
 
 ### 🟡 Good to know
 
-**3. `〉CURSOR speed x` is never updated.** As a result, `〉SIZE+ mouse speed` and `〉ROTATE+ mouse speed` have no effect. Fix: [06 §5](06-curseur.md#5-alimenter-la-vitesse-de-la-souris).
+**3. `〉CURSOR speed x` is never updated.** As a result, `〉SIZE+ mouse speed` and `〉ROTATE+ mouse speed` have no effect. Fix: [06 §5](<06 · Cursor.md#5-feeding-the-mouse-speed>).
 
-**4. Camera direction.** The `DEMO` comment describes `render = x − (cam × mirror)`, whereas the `〉UPDATE camera` block calculates `x + (cam ÷ mirror)`. In `origin [CAMERA]` mode, the camera offset is also added **twice** in the formula. Test it visually and choose `mirror` accordingly ([05](05-camera.md)).
+**4. Camera direction.** The `DEMO` comment describes `render = x − (cam × mirror)`, whereas the `〉UPDATE camera` block calculates `x + (cam ÷ mirror)`. In `origin [CAMERA]` mode, the camera offset is also added **twice** in the formula. Test it visually and choose `mirror` accordingly ([05](<05 · Camera.md>)).
 
-**5. `SCENE <name> STOP` message.** It is broadcast with the name of the **new** scene. To detect when leaving a scene, compare `〉SCENE` on every tick ([09](09-scenes-fondus.md)).
+**5. `SCENE <name> STOP` message.** It is broadcast with the name of the **new** scene. To detect when leaving a scene, compare `〉SCENE` on every tick ([09](<09 · Scenes and Fades.md>)).
 
-**6. Commands offered but not connected.** The terminal autocomplete suggests `SCENE GET <n>` and `ALERT NEW <sprite> [sound]`: no code handles them. There are also `SOUND PLAY / LOOP / STOP` lines in Core that are not attached to any hat block (they never execute). Use `〉SOUND play` in sprites ([13](13-son-clavier-temps.md)).
+**6. Commands offered but not connected.** The terminal autocomplete suggests `SCENE GET <n>` and `ALERT NEW <sprite> [sound]`: no code handles them. There are also `SOUND PLAY / LOOP / STOP` lines in Core that are not attached to any hat block (they never execute). Use `〉SOUND play` in sprites ([13](<13 · Sound, Keyboard, Mouse, and Time.md>)).
 
-**7. The cursor is cloned every time `SCENE MENU` is entered** ([06 §4](06-curseur.md#4-quand-apparaît-le-curseur-)).
+**7. The cursor is cloned every time `SCENE MENU` is entered** ([06 §4](<06 · Cursor.md#4-when-does-the-cursor-appear>)).
 
 **8. `〉DATA` in `Frame` sprites does not have `ADD` for `GAME`.** Use `GET` then `SET`, or go through `〉CMD / name [GAME] option [ADD] …` (Core version).
 
-**9. Text and camera.** By default, text does not follow the camera ([08 §6](08-texte.md#6-suivre-la-caméra)). Only one font (`default`) is provided, in white, with uppercase letters drawn the same way as lowercase letters.
+**9. Text and camera.** By default, text does not follow the camera ([08 §6](<08 · Text.md#6-following-the-camera>)). Only one font (`default`) is provided, in white, with uppercase letters drawn the same way as lowercase letters.
 
-**10. `VOL.MASTER` is not applied automatically** ([13](13-son-clavier-temps.md)).
+**10. `VOL.MASTER` is not applied automatically** ([13](<13 · Sound, Keyboard, Mouse, and Time.md>)).
 
 **11. `Config - CHECK USER`** ignores its “normal scene” parameter: during normal use, the requested scene is always `MENU`.
 
@@ -101,7 +101,7 @@ In `Core - GEN KEY`, if the calculated key has **more than 11** digits, it is tr
 
 **13. Test data in the file:** notes, example values in `ᗢ DATA save`, old codes in `〉SAVECODES`, username in `〉USER`. Clean these up before publishing.
 
-**14. Save system:** only a 75-character character set, with no distinction between uppercase and lowercase ([11 §4](11-donnees-sauvegardes.md#4-les-codes-de-sauvegarde-safe-code)).
+**14. Save system:** only a 75-character character set, with no distinction between uppercase and lowercase ([11 §4](<11 · Data and Save Files.md#4-save-codes-safe-code>)).
 
 **15. Names kept as they are:** `UPADTE CAM` and `〉FX pixalate` contain typos; the documentation uses the actual names so you can find them.
 
@@ -109,4 +109,4 @@ In `Core - GEN KEY`, if the calculated key has **more than 11** digits, it is tr
 
 ---
 
-⬅️ [Quick Reference](16-reference-rapide.md) · [Table of Contents](../README.md) · ➡️ [Glossary and Versions](18-glossaire-versions.md)
+⬅️ [Quick Reference](<16 · Quick Reference.md>) · [Table of Contents](../README.md)

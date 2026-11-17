@@ -3,7 +3,7 @@
 
 > **Goal:** understand Catlib's "brain". Once you've read this chapter, everything else becomes logical. Take your time: it's the most important chapter.
 
-⬅️ [Getting started](01-getting-started.md) · [Index](../README.md) · ➡️ [The Frame sprite](03-frame.md)
+⬅️ [Getting started](<01 · Getting started.md>) · [Index](../README.md) · ➡️ [The Frame sprite](<03 · Frame.md>)
 
 ---
 
@@ -43,7 +43,7 @@ Every frame (≈ 30 times per second in Scratch), `ᗢ Core` broadcasts the mess
 
 | Step | Effect |
 |---|---|
-| 1. If commands are waiting | Creates **one clone** of Core that runs **one** command (see [10 · Commands](10-commands-modules.md)). |
+| 1. If commands are waiting | Creates **one clone** of Core that runs **one** command (see [10 · Commands](<10 · Commands and Modules.md>)). |
 | 2. `reset timer` | Used to **detect the stop button** (see below). |
 | 3. `erase all` (pen) | Clears the previous frame's drawing. |
 | 4. `ᗢ CORE pack layers` | Updates the display order of objects. |
@@ -52,7 +52,7 @@ Every frame (≈ 30 times per second in Scratch), `ᗢ Core` broadcasts the mess
 A **second loop** broadcasts `ᗢ CATLIB - tick` and adds `0.1` to the variable `ᗢ CLOCK` (an internal clock used for unique IDs and the text cursor blinking).
 
 > [!WARNING]
-> **The pen is cleared every frame.** If you draw with the pen yourself, your drawing will vanish immediately. Catlib uses the pen (via "stamping") to display objects: that's what allows many elements without slowing down. See [03 · Frame, stamp mode](03-frame.md#4-stamp-mode).
+> **The pen is cleared every frame.** If you draw with the pen yourself, your drawing will vanish immediately. Catlib uses the pen (via "stamping") to display objects: that's what allows many elements without slowing down. See [03 · Frame, stamp mode](<03 · Frame.md#4-stamp-mode>).
 
 ### How Catlib detects the stop button
 
@@ -71,7 +71,7 @@ Scratch doesn't tell you when stop is pressed. Catlib uses a trick: the timer is
 | `ᗢ SCENE new` | Core | On every scene change | React to any change. |
 | `ᗢ SCENE back` | Core | Back to previous scene | Same. |
 | `SCENE <NAME>` | Core | Entering scene `<NAME>` | **Create the objects of that scene.** |
-| `SCENE <NAME> STOP` | Core | Scene change | See [09 · Scenes](09-scenes-fades.md#careful-the-stop-message). |
+| `SCENE <NAME> STOP` | Core | Scene change | See [09 · Scenes](<09 · Scenes and Fades.md#warning-the-stop-message>). |
 | `INTRO fade` | INTRO V12 | End of logo | Only used by the intro. |
 
 > [!NOTE]
@@ -129,7 +129,7 @@ That's what lets you add the camera, layers or zoom **without changing your logi
 
 | List | Contains |
 |---|---|
-| `ᗢ DATA game` / `save` / `cache` / `cloud` | The 4 data spaces ([chapter 11](11-data-saves.md)). |
+| `ᗢ DATA game` / `save` / `cache` / `cloud` | The 4 data spaces ([chapter 11](<11 · Data and Save Files.md>)). |
 | `〉SAVECODES` | The latest generated save codes. |
 | `〉PRESSED KEY` | The keys currently held down. |
 | `ᗢ CORE cmd` / `stack` | The command queue. |
@@ -180,4 +180,4 @@ flowchart TB
 
 ---
 
-⬅️ [Getting started](01-getting-started.md) · [Index](../README.md) · ➡️ [The Frame sprite](03-frame.md)
+⬅️ [Getting started](<01 · Getting started.md>) · [Index](../README.md) · ➡️ [The Frame sprite](<03 · Frame.md>)

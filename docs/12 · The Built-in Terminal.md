@@ -3,7 +3,7 @@
 
 > **Objective:** use Catlib's hidden console to **test and debug** your game while it is running: change scenes, read or modify data, write notes…
 
-⬅️ [Data and Save Files](11-donnees-sauvegardes.md) · [Table of Contents](../README.md) · ➡️ [Sound, Keyboard, Time](13-son-clavier-temps.md)
+⬅️ [Data and Save Files](<11 · Data and Save Files.md>) · [Table of Contents](../README.md) · ➡️ [Sound, Keyboard, Time](<13 · Sound, Keyboard, Mouse, and Time.md>)
 
 ---
 
@@ -37,7 +37,7 @@ When open, the cursor becomes a **text cursor** and the screen displays: the tit
 
 A command name followed by its options. `<n>` = required name, `[val]` = optional value.
 
-### Scenes ([chapter 09](09-scenes-fondus.md))
+### Scenes ([chapter 09](<09 · Scenes and Fades.md>))
 
 | Command | Effect |
 |---|---|
@@ -46,7 +46,7 @@ A command name followed by its options. `<n>` = required name, `[val]` = optiona
 | `SCENE MAIN` | Returns to the main scene |
 | `SCENE RESET` | Clears the scene history |
 
-### Data ([chapter 11](11-donnees-sauvegardes.md))
+### Data ([chapter 11](<11 · Data and Save Files.md>))
 
 Valid for **`GAME`**, **`CACHE`**, **`SAVE`**, and **`CLOUD`**:
 
@@ -84,11 +84,11 @@ Notes are stored in `GAME` under the name `NOTE.<name>`, along with their last m
 
 | Command | Effect |
 |---|---|
-| `FADE <scene> <speed1> <speed2> …` | Fades into a scene ([09](09-scenes-fondus.md)) |
-| Any command from **your module** | See [10](10-commandes-modules.md) |
+| `FADE <scene> <speed1> <speed2> …` | Fades into a scene ([09](<09 · Scenes and Fades.md>)) |
+| Any command from **your module** | See [10](<10 · Commands and Modules.md>) |
 
 > [!WARNING]
-> Autocomplete also suggests `SCENE GET <n>`, `ALERT NEW …`, and (depending on the project) `SOUND` commands, but **nothing is connected to them** in this project file. Therefore, they do nothing. See [17](17-depannage.md).
+> Autocomplete also suggests `SCENE GET <n>`, `ALERT NEW …`, and (depending on the project) `SOUND` commands, but **nothing is connected to them** in this project file. Therefore, they do nothing. See [17](<17 · Troubleshooting and Known Limitations.md>).
 
 ## 4. Changing the Terminal Keys
 
@@ -102,15 +102,15 @@ Or directly in the terminal: `GAME SET TERM.KEY.TOGGLE t`.
 ## 5. Writing to the Terminal and Log
 
 - `ᗢ Core` contains the `〉TERMINAL write / type [TYPE] prefix [PREFIX] text [TEXT]` block, with the types `FEEDBACK` (indented feedback line), `COMMENT`, `CODE`, or empty. This block **only exists in Core**.
-- From another sprite, use the **`LOG`** command ([chapter 10](10-commandes-modules.md#la-commande-log)): it writes to the `〉LOGS` list.
+- From another sprite, use the **`LOG`** command ([chapter 10](<10 · Commands and Modules.md#the-log-command>)): it writes to the `〉LOGS` list.
 - `〉DEVLOG / new entry [TEXT] new version? [VERSION]` adds a dated entry to the **development log** `〉DEVLOGS` (Core list).
 
 ## 6. How It Works (For the Curious)
 
-- `Lib - TERMINAL` runs in a loop: it reads the **first key** in the `〉PRESSED KEY` list ([13](13-son-clavier-temps.md)), adds it to the input text, and handles special keys.
-- `ᗢ Text` draws the lines using the text engine ([08](08-texte.md)).
+- `Lib - TERMINAL` runs in a loop: it reads the **first key** in the `〉PRESSED KEY` list ([13](<13 · Sound, Keyboard, Mouse, and Time.md>)), adds it to the input text, and handles special keys.
+- `ᗢ Text` draws the lines using the text engine ([08](<08 · Text.md>)).
 - When a command is entered, the terminal checks the first word: `CACHE`, `GAME`, `SAVE`, or `CLOUD` (except `SEND`, `SYNC`, `EXPORT`, `IMPORT`, and `FIND`) directly calls `〉DATA`; everything else goes through `〉CMD`.
 
 ---
 
-⬅️ [Data and Save Files](11-donnees-sauvegardes.md) · [Table of Contents](../README.md) · ➡️ [Sound, Keyboard, Time](13-son-clavier-temps.md)
+⬅️ [Data and Save Files](<11 · Data and Save Files.md>) · [Table of Contents](../README.md) · ➡️ [Sound, Keyboard, Time](<13 · Sound, Keyboard, Mouse, and Time.md>)

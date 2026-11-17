@@ -3,7 +3,7 @@
 
 > **Goal:** use Catlib's custom cursor, react to hover and click, and read the mouse position.
 
-⬅️ [Camera](05-camera.md) · [Index](../README.md) · ➡️ [UI Builder](07-ui.md)
+⬅️ [Camera](<05 · Camera.md>) · [Index](../README.md) · ➡️ [UI Builder](<07 · UI.md>)
 
 ---
 
@@ -54,7 +54,7 @@ DEFINE 〉CURSOR idle
 ```
 
 > [!NOTE]
-> These events are independent of the UI's (`〉UI on hover`…): the cursor reacts to the fact that **an** element is hovered, each button reacts **for itself**. See [07 · UI](07-ui.md).
+> These events are independent of the UI's (`〉UI on hover`…): the cursor reacts to the fact that **an** element is hovered, each button reacts **for itself**. See [07 · UI](<07 · UI.md>).
 
 ## 4. When does the cursor appear?
 
@@ -65,7 +65,7 @@ In the provided file, the cursor is created when the message **`SCENE MENU`** is
 
 ## 5. Feeding the mouse speed
 
-The `〉SIZE+ mouse speed` and `〉ROTATE+ mouse speed` blocks ([chapter 04](04-movement-effects.md#6-animations-that-react-to-the-mouse)) read `〉CURSOR speed x`. In the provided file, **this variable is never computed**. To enable it, in `ᗢ Cursor`, in the script that updates `〉CURSOR x` / `〉CURSOR y` (`when I receive ᗢ CATLIB - ready` → `forever`), add **before** the update of `〉CURSOR x`:
+The `〉SIZE+ mouse speed` and `〉ROTATE+ mouse speed` blocks ([chapter 04](<04 · Movement Effects.md#6-animations-that-react-to-the-mouse>)) read `〉CURSOR speed x`. In the provided file, **this variable is never computed**. To enable it, in `ᗢ Cursor`, in the script that updates `〉CURSOR x` / `〉CURSOR y` (`when I receive ᗢ CATLIB - ready` → `forever`), add **before** the update of `〉CURSOR x`:
 
 ```text
 set [〉CURSOR speed x] to ( (mouse x) − 〉CURSOR x )
@@ -76,10 +76,10 @@ Since `〉CURSOR x` still holds the previous frame's value, the difference is in
 
 ## 6. Other uses of the mouse
 
-- **Parallax**: `〉MOVE+ parallax` ([04](04-movement-effects.md#6-animations-that-react-to-the-mouse)).
-- **Turn toward the mouse**: `〉TOOL get rotate / from [x] [y] to [〉CURSOR x] [〉CURSOR y]` ([14 · TOOLS](14-tools.md)).
-- **Click in an area**: `〉TOOL check collide` with `〉CURSOR x` and `〉CURSOR y` ([14](14-tools.md)).
+- **Parallax**: `〉MOVE+ parallax` ([04](<04 · Movement Effects.md#6-animations-that-react-to-the-mouse>)).
+- **Turn toward the mouse**: `〉TOOL get rotate / from [x] [y] to [〉CURSOR x] [〉CURSOR y]` ([14 · TOOLS](<14 · The TOOLS Blocks.md>)).
+- **Click in an area**: `〉TOOL check collide` with `〉CURSOR x` and `〉CURSOR y` ([14](<14 · The TOOLS Blocks.md>)).
 
 ---
 
-⬅️ [Camera](05-camera.md) · [Index](../README.md) · ➡️ [UI Builder](07-ui.md)
+⬅️ [Camera](<05 · Camera.md>) · [Index](../README.md) · ➡️ [UI Builder](<07 · UI.md>)

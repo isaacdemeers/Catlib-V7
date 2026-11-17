@@ -3,7 +3,7 @@
 
 > **Goal:** display text on screen with the `〉WRITE` block: alignment, size, brightness, curved-screen effect, and even your own fonts.
 
-⬅️ [UI Builder](07-ui.md) · [Index](../README.md) · ➡️ [Scenes and fades](09-scenes-fades.md)
+⬅️ [UI Builder](<07 · UI.md>) · [Index](../README.md) · ➡️ [Scenes and fades](<09 · Scenes and Fades.md>)
 
 ---
 
@@ -63,7 +63,7 @@ if < 〉SCENE = [MENU] > then
 〉TOOL Text normalize / val [score] target len. [6]
 〉WRITE at [-230] [165] ALIGN [l] … TEXT [〉TOOL Text normalize output] … STAMP? [YES]
 ```
-Result: `000042`. See [14 · TOOLS](14-tools.md).
+Result: `000042`. See [14 · TOOLS](<14 · The TOOLS Blocks.md>).
 
 ## 4. The curved-screen effect (`SCREEN VFX?`)
 
@@ -94,11 +94,11 @@ The block looks for the costume named **`<FONT>_<character>`**. With `FONT` empt
 
 ## 6. Following the camera
 
-In the provided file, `ᗢ Text` applies `〉UPDATE self` (no camera) in its `〉SELF update function` block: the text **stays fixed on screen** even if the camera moves (ideal for an interface). A `〉UPDATE camera` block is available in the sprite: for text that **follows the world**, replace `〉UPDATE self` with `〉UPDATE camera` in `〉SELF update function` (see [05 · Camera](05-camera.md)).
+In the provided file, `ᗢ Text` applies `〉UPDATE self` (no camera) in its `〉SELF update function` block: the text **stays fixed on screen** even if the camera moves (ideal for an interface). A `〉UPDATE camera` block is available in the sprite: for text that **follows the world**, replace `〉UPDATE self` with `〉UPDATE camera` in `〉SELF update function` (see [05 · Camera](<05 · Camera.md>)).
 
 ## 7. The terminal uses this engine
 
-When you open the terminal (`&`), it's `ᗢ Text` that draws the lines (`ᗢ CORE print terminal`), the time and the `terminal v2.0` title. See [12 · Terminal](12-terminal.md).
+When you open the terminal (`&`), it's `ᗢ Text` that draws the lines (`ᗢ CORE print terminal`), the time and the `terminal v2.0` title. See [12 · Terminal](<12 · The Built-in Terminal.md>).
 
 ## 8. Cheat sheet
 
@@ -110,8 +110,8 @@ When you open the terminal (`&`), it's `ᗢ Text` that draws the lines (`ᗢ COR
 | Darker text | `BRIGHT [-50]` |
 | More spaced letters | `SPACING ( 4 + [2] )` |
 | Automatically shrink long texts | `GROUP [AUTOSIZE]` |
-| Separate thousands | `〉TOOL Text space` ([14](14-tools.md)) |
+| Separate thousands | `〉TOOL Text space` ([14](<14 · The TOOLS Blocks.md>)) |
 
 ---
 
-⬅️ [UI Builder](07-ui.md) · [Index](../README.md) · ➡️ [Scenes and fades](09-scenes-fades.md)
+⬅️ [UI Builder](<07 · UI.md>) · [Index](../README.md) · ➡️ [Scenes and fades](<09 · Scenes and Fades.md>)

@@ -3,7 +3,7 @@
 
 > **Goal:** know how to build any object in your game (character, scenery, enemy, button…) from the **`Frame`** sprite.
 
-⬅️ [How it works](02-how-it-works.md) · [Index](../README.md) · ➡️ [Movement and effects](04-movement-effects.md)
+⬅️ [How it works](<02 · How it works.md>) · [Index](../README.md) · ➡️ [Movement and effects](<04 · Movement Effects.md>)
 
 ---
 
@@ -89,7 +89,7 @@ The `〉MOVE`, `〉SIZE`, `〉ROTATE` blocks **don't** move the sprite: they mod
 | Block | Role |
 |---|---|
 | `〉UPDATE normal` | **Normal** mode: the object behaves as usual. It's not affected by the camera (ideal for the interface). |
-| `〉UPDATE camera / origine [ORIGINE] mirror [SIDE]` | **Camera** mode: the object is tied to the camera (position, zoom, rotation). See [05 · Camera](05-camera.md). |
+| `〉UPDATE camera / origine [ORIGINE] mirror [SIDE]` | **Camera** mode: the object is tied to the camera (position, zoom, rotation). See [05 · Camera](<05 · Camera.md>). |
 
 Both blocks also update the layer (`ᗢ CORE update plan`) and the size (`ᗢ CORE size instant`, which lets you exceed Scratch's size limit by going through an empty `_BLANK` costume).
 
@@ -142,15 +142,15 @@ Every sprite duplicated from `Frame` gets the following **for free**:
 
 | Family | Blocks | Chapter |
 |---|---|---|
-| Movement | `〉MOVE set / smooth / bounce / add`, `〉MOVE+ parallax` | [04](04-movement-effects.md) |
-| Size | `〉SIZE set / smooth / bounce / add`, `〉SIZE+ mouse speed` | [04](04-movement-effects.md) |
-| Rotation | `〉ROTATE set / smooth / bounce / add`, `〉ROTATE+ mouse speed` | [04](04-movement-effects.md) |
-| Effects | `〉FX ghost / bright / color / fisheye / pixalate / whirl` | [04](04-movement-effects.md) |
-| Rendering | `〉UPDATE normal`, `〉UPDATE camera`, `〉SELF stamp`, `〉SELF set layer` | this chapter + [05](05-camera.md) |
-| Data | `〉DATA / source action var to` | [11](11-data-saves.md) |
-| Commands | `〉CMD / name option args…` | [10](10-commands-modules.md) |
-| Sound | `〉SOUND play`, `〉SOUND stop` | [13](13-sound-keyboard-time.md) |
-| Tools | `〉TOOL …` (distance, angle, collision, text…) | [14](14-tools.md) |
+| Movement | `〉MOVE set / smooth / bounce / add`, `〉MOVE+ parallax` | [04](<04 · Movement Effects.md>) |
+| Size | `〉SIZE set / smooth / bounce / add`, `〉SIZE+ mouse speed` | [04](<04 · Movement Effects.md>) |
+| Rotation | `〉ROTATE set / smooth / bounce / add`, `〉ROTATE+ mouse speed` | [04](<04 · Movement Effects.md>) |
+| Effects | `〉FX ghost / bright / color / fisheye / pixalate / whirl` | [04](<04 · Movement Effects.md>) |
+| Rendering | `〉UPDATE normal`, `〉UPDATE camera`, `〉SELF stamp`, `〉SELF set layer` | this chapter + [05](<05 · Camera.md>) |
+| Data | `〉DATA / source action var to` | [11](<11 · Data and Save Files.md>) |
+| Commands | `〉CMD / name option args…` | [10](<10 · Commands and Modules.md>) |
+| Sound | `〉SOUND play`, `〉SOUND stop` | [13](<13 · Sound, Keyboard, Mouse, and Time.md>) |
+| Tools | `〉TOOL …` (distance, angle, collision, text…) | [14](<14 · The TOOLS Blocks.md>) |
 
 ### Each object's variables
 
@@ -190,8 +190,8 @@ It brings the object back to the center with a bouncy effect. It's great to **se
 6. ✅ Create the object when needed: `create clone of myself`.
 7. ✅ Remove it with `〉SELF kill`.
 
-👉 A full example: [Recipe 1: My first object](15-recipes.md#recipe-1--my-first-object).
+👉 A full example: [Recipe 1: My first object](<15 · Step-by-Step Recipes.md#recipe-1-my-first-object>).
 
 ---
 
-⬅️ [How it works](02-how-it-works.md) · [Index](../README.md) · ➡️ [Movement and effects](04-movement-effects.md)
+⬅️ [How it works](<02 · How it works.md>) · [Index](../README.md) · ➡️ [Movement and effects](<04 · Movement Effects.md>)

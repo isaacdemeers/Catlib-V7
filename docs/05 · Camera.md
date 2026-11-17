@@ -3,7 +3,7 @@
 
 > **Goal:** move, zoom and rotate the game's "camera", and make your objects follow it.
 
-⬅️ [Movement and effects](04-movement-effects.md) · [Index](../README.md) · ➡️ [Cursor](06-cursor.md)
+⬅️ [Movement and effects](<04 · Movement Effects.md>) · [Index](../README.md) · ➡️ [Cursor](<06 · Cursor.md>)
 
 ---
 
@@ -41,7 +41,7 @@ DEFINE UPADTE CAM
     〉MOVE set / xy [0] [0]
 ```
 
-= fixed camera at the center, normal zoom. **This is where you put your camera logic**, using the same blocks as for any object (see [04](04-movement-effects.md)).
+= fixed camera at the center, normal zoom. **This is where you put your camera logic**, using the same blocks as for any object (see [04](<04 · Movement Effects.md>)).
 
 ### Example: smoothly following a player
 
@@ -97,7 +97,7 @@ direction       = ( (〉CAM rotation + 〉SELF rotation) × (−mirror) ) + 90
 So with **`mirror = 1`**, the object is shifted by `+〉CAM x`; with **`mirror = -1`**, by `−〉CAM x`.
 
 > [!WARNING]
-> The `DEMO` comment says that with `mirror = 1` "if the camera goes right, the sprite goes left" (`50 − 80 × mirror`). But the block's formula does the opposite (`+ 80`). Depending on how you move the camera, you'll need `1` or `-1`: **do a quick test** and keep the sign that works for you. See [17 · Known limitations](17-troubleshooting.md).
+> The `DEMO` comment says that with `mirror = 1` "if the camera goes right, the sprite goes left" (`50 − 80 × mirror`). But the block's formula does the opposite (`+ 80`). Depending on how you move the camera, you'll need `1` or `-1`: **do a quick test** and keep the sign that works for you. See [17 · Known limitations](<17 · Troubleshooting and Known Limitations.md>).
 
 ### Which objects should follow the camera?
 
@@ -105,7 +105,7 @@ So with **`mirror = 1`**, the object is shifted by `+〉CAM x`; with **`mirror =
 |---|---|
 | Scenery, characters, enemies, projectiles (the "world") | `〉UPDATE camera` |
 | Fixed interface (score, lives, menu buttons) | `〉UPDATE normal` |
-| Game text | `〉UPDATE normal` by default; see [08 · Text](08-text.md#6-following-the-camera) to follow the camera |
+| Game text | `〉UPDATE normal` by default; see [08 · Text](<08 · Text.md#6-following-the-camera>) to follow the camera |
 
 > [!NOTE]
 > **Experimental tip:** `mirror` is also a divisor. With `2` or `4`, the object follows the camera **two or four times less**: ideal for a distant background (depth effect). Careful, this value also changes the object's rotation.
@@ -120,4 +120,4 @@ if < 〉CAM z > [2] > then … (the camera is zoomed in a lot)
 
 ---
 
-⬅️ [Movement and effects](04-movement-effects.md) · [Index](../README.md) · ➡️ [Cursor](06-cursor.md)
+⬅️ [Movement and effects](<04 · Movement Effects.md>) · [Index](../README.md) · ➡️ [Cursor](<06 · Cursor.md>)

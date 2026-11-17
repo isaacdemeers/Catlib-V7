@@ -3,7 +3,7 @@
 
 > **Objective:** organize your game into "screens" (menu, game, options, etc.) and switch between them, with a fade transition if you want.
 
-⬅️ [Text](08-texte.md) · [Table of Contents](../README.md) · ➡️ [Commands and Modules](10-commandes-modules.md)
+⬅️ [Text](<08 · Text.md>) · [Table of Contents](../README.md) · ➡️ [Commands and Modules](<10 · Commands and Modules.md>)
 
 ---
 
@@ -15,7 +15,7 @@ This system keeps things organized: each screen responds to **its own** message 
 
 ## 2. Changing scenes
 
-We use a **command** (see [10 · Commands](10-commandes-modules.md)):
+We use a **command** (see [10 · Commands](<10 · Commands and Modules.md>)):
 
 ```text
 〉CMD / name [SCENE] option [SET] args [GAME] [] [] awaited? [NO]
@@ -58,7 +58,7 @@ create a clone of [myself]
 ```
 
 > [!TIP]
-> This check ("if the scene is no longer mine, I disappear") is the safest way to clean things up. For the UI, this happens automatically thanks to `visible on scene` ([07](07-ui.md)).
+> This check ("if the scene is no longer mine, I disappear") is the safest way to clean things up. For the UI, this happens automatically thanks to `visible on scene` ([07](<07 · UI.md>)).
 
 ### Warning: the STOP message
 
@@ -116,4 +116,4 @@ The `INTRO V12` sprite then plays its logo animation and requests `SCENE SET MEN
 
 ---
 
-⬅️ [Text](08-texte.md) · [Table of Contents](../README.md) · ➡️ [Commands and Modules](10-commandes-modules.md)
+⬅️ [Text](<08 · Text.md>) · [Table of Contents](../README.md) · ➡️ [Commands and Modules](<10 · Commands and Modules.md>)

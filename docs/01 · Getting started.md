@@ -3,7 +3,7 @@
 
 > **Goal of this chapter:** understand what Catlib is, open the project, do a first launch and know how to start **your own game** from it.
 
-⬅️ [Back to index](../README.md) · ➡️ [Next chapter: How it works](02-how-it-works.md)
+⬅️ [Back to index](../README.md) · ➡️ [Next chapter: How it works](<02 · How it works.md>)
 
 ---
 
@@ -31,7 +31,7 @@ No need to be an expert, but you should know these Scratch notions:
 | **Custom block** | A block you invent (*My Blocks* category). |
 
 > [!TIP]
-> **Clones** are everywhere in Catlib. If that word scares you, just remember: *the original sprite is a "factory", clones are the "objects" it makes.* More in [chapter 02](02-how-it-works.md).
+> **Clones** are everywhere in Catlib. If that word scares you, just remember: *the original sprite is a "factory", clones are the "objects" it makes.* More in [chapter 02](<02 · How it works.md>).
 
 ## 3. How to read blocks in this documentation
 
@@ -70,7 +70,7 @@ The little boxes:
 > **Why TurboWarp?** Catlib uses a huge number of clones and loops. TurboWarp is much faster and can remove Scratch's 300-clone limit. The file was also saved with TurboWarp.
 
 > [!WARNING]
-> The project contains a **cloud variable**. It only works on the **official Scratch website** with a logged-in account. In TurboWarp or offline, the "cloud" part of [11 · Data and saves](11-data-saves.md) won't work.
+> The project contains a **cloud variable**. It only works on the **official Scratch website** with a logged-in account. In TurboWarp or offline, the "cloud" part of [11 · Data and saves](<11 · Data and Save Files.md>) won't work.
 
 ## 5. Guided tour: the project's sprites
 
@@ -93,7 +93,7 @@ When you open the project you see **11 sprites** and the *Stage*. Sprites whose 
 > [!TIP]
 > The **DEMO** sprite is your best friend at the start: hover the comments attached to the blocks, they explain what each one does.
 
-The Stage has no scripts. It **stores the global variables and lists** all sprites share (see [02 · How it works](02-how-it-works.md#6-global-variables-and-lists)). It has two backdrops: `CATLIB` and `BLACK`.
+The Stage has no scripts. It **stores the global variables and lists** all sprites share (see [02 · How it works](<02 · How it works.md#6-global-variables-and-lists>)). It has two backdrops: `CATLIB` and `BLACK`.
 
 ## 6. First launch
 
@@ -106,7 +106,7 @@ Click the **green flag** 🏁. Here's what happens, in order:
 5. Press the **`&`** key: the **terminal** opens (and the cursor becomes a text cursor). Type `HELP` + `Enter`. Press `&` again to close it.
 
 > [!NOTE]
-> On an **AZERTY** keyboard, `&` is on the `1` key. You can change the opening key, see [12 · Terminal](12-terminal.md#4-changing-the-terminal-keys).
+> On an **AZERTY** keyboard, `&` is on the `1` key. You can change the opening key, see [12 · Terminal](<12 · The Built-in Terminal.md#4-changing-the-terminal-keys>).
 
 ## 7. Starting your own game
 
@@ -115,9 +115,9 @@ The simplest way: **use Catlib_v7.sb3 as a template** and build your game *insid
 1. **Keep the original intact.** Open the project then *File → Save to your computer* under a **new name** (e.g. `MyGame.sb3`).
 2. **Choose your game version.** In `ᗢ Core`, find the block `Config - CATLIB / game version [1.0]` (under the hat *when I receive `ᗢ CATLIB - start`*) and put your version number.
 3. **Decide what you keep.** You can delete `INTRO V12` (or replace it with your own logo), `DEMO` and, later, `Extension` if you don't create commands.
-4. **Clean the test data.** The lists `ᗢ DATA game`, `ᗢ DATA save`, `〉SAVECODES` contain sample values (notes, codes…). Clear what you don't need before publishing (see [11 · Data](11-data-saves.md)).
-5. **Create your objects** by duplicating `Frame` ([03 · Frame](03-frame.md)).
-6. **Create your scenes**: `MENU`, `GAME`, `OPTIONS`… ([09 · Scenes](09-scenes-fades.md)).
+4. **Clean the test data.** The lists `ᗢ DATA game`, `ᗢ DATA save`, `〉SAVECODES` contain sample values (notes, codes…). Clear what you don't need before publishing (see [11 · Data](<11 · Data and Save Files.md>)).
+5. **Create your objects** by duplicating `Frame` ([03 · Frame](<03 · Frame.md>)).
+6. **Create your scenes**: `MENU`, `GAME`, `OPTIONS`… ([09 · Scenes](<09 · Scenes and Fades.md>)).
 
 ### What if I want to copy Catlib's sprites into another project?
 
@@ -146,4 +146,4 @@ It's possible but **riskier**, because Catlib works with **global variables and 
 
 ---
 
-⬅️ [Back to index](../README.md) · ➡️ [Next chapter: How it works](02-how-it-works.md)
+⬅️ [Back to index](../README.md) · ➡️ [Next chapter: How it works](<02 · How it works.md>)

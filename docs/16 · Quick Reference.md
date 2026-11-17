@@ -4,13 +4,13 @@
 
 > The list of **all Catlib blocks**, organized by sprite, with their purpose. For explanations, follow the chapter link.
 
-⬅️ [Recipes](15-recettes.md) · [Table of Contents](../README.md) · ➡️ [Troubleshooting](17-depannage.md)
+⬅️ [Recipes](<15 · Step-by-Step Recipes.md>) · [Table of Contents](../README.md) · ➡️ [Troubleshooting](<17 · Troubleshooting and Known Limitations.md>)
 
 ---
 
 ## Blocks available in all `Frame` sprites
 
-### Lifecycle and rendering — [03](03-frame.md)
+### Lifecycle and rendering — [03](<03 · Frame.md>)
 
 | Block | Purpose |
 |---|---|
@@ -22,7 +22,7 @@
 | `〉UPDATE normal` | Apply position/size/rotation to the screen. |
 | `〉UPDATE camera / origine [ORIGINE] mirror [SIDE]` | Same, linked to the camera. |
 
-### Movement, size, rotation — [04](04-mouvements-effets.md)
+### Movement, size, rotation — [04](<04 · Movement Effects.md>)
 
 | Block | Purpose |
 |---|---|
@@ -42,7 +42,7 @@
 | `〉ROTATE add / val [VALUE]` | Add degrees. |
 | `〉ROTATE+ mouse speed / damp [DAMP] mirror [MIRROR]` | Rotation based on mouse speed. |
 
-### Effects — [04](04-mouvements-effets.md)
+### Effects — [04](<04 · Movement Effects.md>)
 
 | Block | Purpose |
 |---|---|
@@ -57,12 +57,12 @@
 
 | Block | Purpose | Chapter |
 |---|---|---|
-| `〉DATA / source [SOURCE] action [ACTION] var [NAME] to [VAL]` | Read / write data. | [11](11-donnees-sauvegardes.md) |
-| `〉CMD / name [CMD] option [OPTION] args [ARG1] [ARG2] [ARG3] awaited? [AWAIT]` | Send a command. | [10](10-commandes-modules.md) |
-| `〉SOUND play / name [NAME] loop? [LOOP?] ( volume ) [VOL]` | Play a sound. | [13](13-son-clavier-temps.md) |
-| `〉SOUND stop / name [NAME]` | Stop a sound (`ALL` = all). | [13](13-son-clavier-temps.md) |
+| `〉DATA / source [SOURCE] action [ACTION] var [NAME] to [VAL]` | Read / write data. | [11](<11 · Data and Save Files.md>) |
+| `〉CMD / name [CMD] option [OPTION] args [ARG1] [ARG2] [ARG3] awaited? [AWAIT]` | Send a command. | [10](<10 · Commands and Modules.md>) |
+| `〉SOUND play / name [NAME] loop? [LOOP?] ( volume ) [VOL]` | Play a sound. | [13](<13 · Sound, Keyboard, Mouse, and Time.md>) |
+| `〉SOUND stop / name [NAME]` | Stop a sound (`ALL` = all). | [13](<13 · Sound, Keyboard, Mouse, and Time.md>) |
 
-### Tools — [14](14-tools.md)
+### Tools — [14](<14 · The TOOLS Blocks.md>)
 
 | Block | Output |
 |---|---|
@@ -86,7 +86,7 @@
 
 ## Specific to each engine
 
-### `ᗢ Core` — [02](02-fonctionnement.md), [09](09-scenes-fondus.md), [10](10-commandes-modules.md), [12](12-terminal.md)
+### `ᗢ Core` — [02](<02 · How it works.md>), [09](<09 · Scenes and Fades.md>), [10](<10 · Commands and Modules.md>), [12](<12 · The Built-in Terminal.md>)
 
 | Block | Purpose |
 |---|---|
@@ -103,7 +103,7 @@
 | `Lib - TERMINAL / KEY / LOG / SCENE / SAVE / CLOUD / CACHE / DATA / NOTES / HELP / CUSTOM` | Built-in command libraries. |
 | `Func - …` and `Core - …` | Internal functions (data, encryption, terminal…). |
 
-### `ᗢ Camera` — [05](05-camera.md)
+### `ᗢ Camera` — [05](<05 · Camera.md>)
 
 | Block | Purpose |
 |---|---|
@@ -111,25 +111,25 @@
 | `〉UPDATE self` | Copies position/zoom/rotation to `〉CAM …`. |
 | `〉PLAN set / layer [LAYER]`, `〉STAMP`, `〉KILL` | Equivalents of `set layer`, `stamp`, `kill`. |
 
-### `ᗢ Cursor` — [06](06-curseur.md)
+### `ᗢ Cursor` — [06](<06 · Cursor.md>)
 
 `〉CURSOR always`, `〉CURSOR idle`, `〉CURSOR on hover`, `〉CURSOR while hover`, `〉CURSOR on click`, `〉CURSOR while click`.
 
-### `ᗢ UI` — [07](07-ui.md)
+### `ᗢ UI` — [07](<07 · UI.md>)
 
 | Block | Purpose |
 |---|---|
 | `〉UI new / name … / xy … / size … / visible on scene … / idle sprite … / hover sfx … / type … action … value …` | Create an element. |
 | `〉UI on create`, `〉UI always`, `〉UI idle`, `〉UI on hover`, `〉UI while hover`, `〉UI on click`, `〉UI while click`, `〉UI delete` | Element events. |
 
-### `ᗢ Text` — [08](08-texte.md)
+### `ᗢ Text` — [08](<08 · Text.md>)
 
 | Block | Purpose |
 |---|---|
 | `〉WRITE at [X] [Y] ALIGN … HSL … SIZE … TEXT … GROUP … TYPE … FONT … SPACING ( 4 + … ) STAMP? … SCREEN VFX? …` | Write text. |
 | `ᗢ CORE print terminal`, `〉SELF update function` | Internal (terminal display) / text rendering. |
 
-### `ᗢ Fader +` and `Extension` — [09](09-scenes-fondus.md), [10](10-commandes-modules.md)
+### `ᗢ Fader +` and `Extension` — [09](<09 · Scenes and Fades.md>), [10](<10 · Commands and Modules.md>)
 
 | Block | Purpose |
 |---|---|
@@ -158,5 +158,5 @@
 
 ---
 
-⬅️ [Recipes](15-recettes.md) · [Table of Contents](../README.md) · ➡️ [Troubleshooting](17-depannage.md)
+⬅️ [Recipes](<15 · Step-by-Step Recipes.md>) · [Table of Contents](../README.md) · ➡️ [Troubleshooting](<17 · Troubleshooting and Known Limitations.md>)
 

@@ -3,7 +3,7 @@
 
 > **Objective:** understand the **command** system that allows all sprites to communicate with each other, learn about the built-in commands, and **create your own commands**.
 
-⬅️ [Scenes and Fades](09-scenes-fondus.md) · [Table of Contents](../README.md) · ➡️ [Data and Save Files](11-donnees-sauvegardes.md)
+⬅️ [Scenes and Fades](<09 · Scenes and Fades.md>) · [Table of Contents](../README.md) · ➡️ [Data and Save Files](<11 · Data and Save Files.md>)
 
 ---
 
@@ -76,17 +76,17 @@ sequenceDiagram
 
 | Command | Options | Purpose | Chapter |
 |---|---|---|---|
-| `SCENE` | `SET`, `BACK`, `MAIN`, `SETMAIN`, `RESET` | Change scenes | [09](09-scenes-fondus.md) |
-| `GAME` | `SET`, `GET`, `ADD`, `CREATE`, `UNSET`, `RENAME`, `CLEAR`, `FIND` | Game data | [11](11-donnees-sauvegardes.md) |
-| `CACHE` | same as above | Temporary data | [11](11-donnees-sauvegardes.md) |
-| `SAVE` | same as above + `IMPORT`, `EXPORT` | Save data | [11](11-donnees-sauvegardes.md) |
-| `CLOUD` | same as above + `SYNC`, `SEND` | Cloud data | [11](11-donnees-sauvegardes.md) |
-| `NOTE` | `NEW`, `OPEN`, `LIST`, `DEL` | Terminal notes | [12](12-terminal.md) |
-| `HELP` | — | Terminal help | [12](12-terminal.md) |
-| `TERMINAL` | `START` | Starts the terminal | [12](12-terminal.md) |
-| `KEY` | `START` | Starts keyboard input handling | [13](13-son-clavier-temps.md) |
+| `SCENE` | `SET`, `BACK`, `MAIN`, `SETMAIN`, `RESET` | Change scenes | [09](<09 · Scenes and Fades.md>) |
+| `GAME` | `SET`, `GET`, `ADD`, `CREATE`, `UNSET`, `RENAME`, `CLEAR`, `FIND` | Game data | [11](<11 · Data and Save Files.md>) |
+| `CACHE` | same as above | Temporary data | [11](<11 · Data and Save Files.md>) |
+| `SAVE` | same as above + `IMPORT`, `EXPORT` | Save data | [11](<11 · Data and Save Files.md>) |
+| `CLOUD` | same as above + `SYNC`, `SEND` | Cloud data | [11](<11 · Data and Save Files.md>) |
+| `NOTE` | `NEW`, `OPEN`, `LIST`, `DEL` | Terminal notes | [12](<12 · The Built-in Terminal.md>) |
+| `HELP` | — | Terminal help | [12](<12 · The Built-in Terminal.md>) |
+| `TERMINAL` | `START` | Starts the terminal | [12](<12 · The Built-in Terminal.md>) |
+| `KEY` | `START` | Starts keyboard input handling | [13](<13 · Sound, Keyboard, Mouse, and Time.md>) |
 | `LOG` | `<TYPE> <text>` | Writes to the `〉LOGS` log | below |
-| `FADE` | `<scene> …` | Scene transition with a fade (module) | [09](09-scenes-fondus.md) |
+| `FADE` | `<scene> …` | Scene transition with a fade (module) | [09](<09 · Scenes and Fades.md>) |
 
 At startup, `Config - WHEN READY COMMANDS` automatically sends `TERMINAL START` and `KEY START`. This is where you can add your own startup commands.
 
@@ -171,4 +171,4 @@ The `ᗢ Fader +` module (the `FADE` command) is a complete example of a real mo
 
 ---
 
-⬅️ [Scenes and Fades](09-scenes-fondus.md) · [Table of Contents](../README.md) · ➡️ [Data and Save Files](11-donnees-sauvegardes.md)
+⬅️ [Scenes and Fades](<09 · Scenes and Fades.md>) · [Table of Contents](../README.md) · ➡️ [Data and Save Files](<11 · Data and Save Files.md>)

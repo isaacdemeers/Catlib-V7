@@ -3,7 +3,7 @@
 
 > **Objective:** store, read, and modify data using **a single block** (`〉DATA`), choose the right storage "space" (`GAME`, `SAVE`, `CACHE`, `CLOUD`), and generate **save codes** for your players.
 
-⬅️ [Commands and Modules](10-commandes-modules.md) · [Table of Contents](../README.md) · ➡️ [Terminal](12-terminal.md)
+⬅️ [Commands and Modules](<10 · Commands and Modules.md>) · [Table of Contents](../README.md) · ➡️ [Terminal](<12 · The Built-in Terminal.md>)
 
 ---
 
@@ -109,7 +109,7 @@ Displays all names **containing** `PLAYER` along with their values in the termin
 | `TERM.KEY.TOGGLE` | `&` | Key used to open the terminal |
 | `TERM.KEY.BACK` | `-` | Key used to delete text in the terminal |
 | `TERM.TOGGLE` | `ON` / `OFF` | Terminal state |
-| `VOL.MASTER`, `VOL.MUSIC`, `VOL.SFX` | `100` | Volume settings (see [13](13-son-clavier-temps.md)) |
+| `VOL.MASTER`, `VOL.MUSIC`, `VOL.SFX` | `100` | Volume settings (see [13](<13 · Sound, Keyboard, Mouse, and Time.md>)) |
 | `GAME_VERSION`, `CATLIB_VERSION` | e.g. `1.0`, `7` | Versions |
 | `TERMINAL.HELP` | text | Text displayed by the `HELP` command |
 | `NOTE.<name>` | text | Terminal notes |
@@ -173,7 +173,7 @@ To give the code a name: `〉DATA / source [SAVE] action [SET] var [SN] to [Alex
 An input box opens ("PLEASE, PASTE CODE HERE. Leave empty to cancel"). The player pastes their code. Catlib reads the key, decrypts the data, and rebuilds the entries.
 
 > [!WARNING]
-> In the provided project, the final step of `SAVE IMPORT` (copying the decrypted data into `ᗢ DATA save`) compares the source to `GAME` instead of `SAVE`: **loading appears to write nothing into `ᗢ DATA save`**. This should be checked and fixed before relying on it. Details and fix: [17 · Known Limitations](17-depannage.md).
+> In the provided project, the final step of `SAVE IMPORT` (copying the decrypted data into `ᗢ DATA save`) compares the source to `GAME` instead of `SAVE`: **loading appears to write nothing into `ᗢ DATA save`**. This should be checked and fixed before relying on it. Details and fix: [17 · Known Limitations](<17 · Troubleshooting and Known Limitations.md>).
 
 ## 5. The Cloud
 
@@ -202,4 +202,4 @@ The `Core - FACTORY RESET` block (factory reset) clears `GAME`, `SAVE`, and `CLO
 
 ---
 
-⬅️ [Commands and Modules](10-commandes-modules.md) · [Table of Contents](../README.md) · ➡️ [Terminal](12-terminal.md)
+⬅️ [Commands and Modules](<10 · Commands and Modules.md>) · [Table of Contents](../README.md) · ➡️ [Terminal](<12 · The Built-in Terminal.md>)

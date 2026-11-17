@@ -3,7 +3,7 @@
 
 > **Objective:** Follow these mini-tutorials in order to build practical things. Each recipe uses concepts from the previous chapters.
 
-⬅️ [TOOLS Tools](14-tools.md) · [Table of Contents](../README.md) · ➡️ [Quick Reference](16-reference-rapide.md)
+⬅️ [TOOLS Tools](<14 · The TOOLS Blocks.md>) · [Table of Contents](../README.md) · ➡️ [Quick Reference](<16 · Quick Reference.md>)
 
 > [!NOTE]
 > The scripts below are **examples written for this documentation**, based on Catlib blocks. They are provided as pseudocode: you must assemble them using the actual blocks.
@@ -16,7 +16,7 @@
 
 1. Right-click `Frame` → **duplicate**. Rename the copy `Balle`.
 2. *Costumes* tab: draw a circle (keep `Icon` and `_BLANK`).
-3. **Delete** the example script `when I start as a clone / forever` ([03 §7](03-frame.md#7-le-script-dexemple-dans-frame-à-supprimer-)).
+3. **Delete** the example script `when I start as a clone / forever` ([03 §7](<03 · Frame.md#7-the-example-script-in-frame-delete-it>)).
 4. Complete `〉SELF init`:
 
 ```text
@@ -75,7 +75,7 @@ DEFINE 〉UI on click
 
 3. Start the game: the button bounces into view, reacts to hovering, and clicking it starts the fade to `GAME`; the button disappears because the scene is no longer `MENU`.
 
-See [07 · UI](07-ui.md) and [09 · Scenes and Fades](09-scenes-fondus.md).
+See [07 · UI](<07 · UI.md>) and [09 · Scenes and Fades](<09 · Scenes and Fades.md>).
 
 ---
 
@@ -97,7 +97,7 @@ DEFINE UPADTE CAM
 〉UPDATE normal   →   〉UPDATE camera / origine [] mirror [1]
 ```
 
-3. Test it. If the background moves in the **wrong direction**, set `mirror` to `-1` (or give the camera the opposite position; see [05](05-camera.md)).
+3. Test it. If the background moves in the **wrong direction**, set `mirror` to `-1` (or give the camera the opposite position; see [05](<05 · Camera.md>)).
 4. Keep the **interface** (score, lives) on `〉UPDATE normal` so it stays fixed.
 
 ---
@@ -120,7 +120,7 @@ if < 〉SCENE = [GAME] > then
             GROUP [] TYPE [] FONT [] SPACING ( 4 + [0] ) STAMP? [YES] SCREEN VFX? [NO]
 ```
 
-See [08 · Text](08-texte.md) and [14 · TOOLS](14-tools.md).
+See [08 · Text](<08 · Text.md>) and [14 · TOOLS](<14 · The TOOLS Blocks.md>).
 
 ---
 
@@ -147,7 +147,7 @@ The player copies the first line in the list (the most recent one).
 An input box opens; the player pastes their code.
 
 > [!WARNING]
-> Check the **"SAVE IMPORT"** item in [17 · Known Limitations](17-depannage.md) before relying on loading, and keep the **character restrictions** in mind ([11 §4](11-donnees-sauvegardes.md#4-les-codes-de-sauvegarde-safe-code)).
+> Check the **"SAVE IMPORT"** item in [17 · Known Limitations](<17 · Troubleshooting and Known Limitations.md>) before relying on loading, and keep the **character restrictions** in mind ([11 §4](<11 · Data and Save Files.md#4-save-codes-safe-code>)).
 
 ---
 
@@ -170,7 +170,7 @@ DEFINE ᗢ MODULE actions
 4. Use it anywhere: `〉CMD / name [COIN] option [ADD] args [5] [] [] awaited? [NO]`.
 5. Check in the terminal: `COIN ADD 5`, then `SAVE FIND COINS`.
 
-See [10 · Commands and Modules](10-commandes-modules.md#6-créer-tes-propres-commandes-avec-extension).
+See [10 · Commands and Modules](<10 · Commands and Modules.md#6-create-your-own-commands-with-extension>).
 
 ---
 
@@ -192,9 +192,9 @@ DEFINE 〉SELF on tick
     〉UPDATE normal
 ```
 
-The **larger** `damp` is, the less the object moves. Try `15` (strong movement) and `60` (subtle movement). To make the **size** or **tilt** react too, first feed in the mouse speed ([06 §5](06-curseur.md#5-alimenter-la-vitesse-de-la-souris)).
+The **larger** `damp` is, the less the object moves. Try `15` (strong movement) and `60` (subtle movement). To make the **size** or **tilt** react too, first feed in the mouse speed ([06 §5](<06 · Cursor.md#5-feeding-the-mouse-speed>)).
 
 ---
 
-⬅️ [TOOLS Tools](14-tools.md) · [Table of Contents](../README.md) · ➡️ [Quick Reference](16-reference-rapide.md)
+⬅️ [TOOLS Tools](<14 · The TOOLS Blocks.md>) · [Table of Contents](../README.md) · ➡️ [Quick Reference](<16 · Quick Reference.md>)
 

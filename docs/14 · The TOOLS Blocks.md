@@ -3,7 +3,7 @@
 
 > **Objective:** Get to know the ready-to-use utility blocks: distances, angles, collisions, conversions, and text manipulation.
 
-⬅️ [Sound, Keyboard, Time](13-son-clavier-temps.md) · [Table of Contents](../README.md) · ➡️ [Recipes](15-recettes.md)
+⬅️ [Sound, Keyboard, Time](<13 · Sound, Keyboard, Mouse, and Time.md>) · [Table of Contents](../README.md) · ➡️ [Recipes](<15 · Step-by-Step Recipes.md>)
 
 ---
 
@@ -119,5 +119,5 @@ Measures the current costume's size in **pixels at 100%** by moving it to the ed
 
 ---
 
-⬅️ [Sound, Keyboard, Time](13-son-clavier-temps.md) · [Table of Contents](../README.md) · ➡️ [Recipes](15-recettes.md)
+⬅️ [Sound, Keyboard, Time](<13 · Sound, Keyboard, Mouse, and Time.md>) · [Table of Contents](../README.md) · ➡️ [Recipes](<15 · Step-by-Step Recipes.md>)
 
